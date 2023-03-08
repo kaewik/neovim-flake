@@ -279,6 +279,7 @@
 
     mainConfig = isMaximal: {
       config = {
+        vim.disableArrows = true;
         vim.viAlias = false;
         vim.vimAlias = true;
         vim.lsp = {
@@ -331,6 +332,7 @@
           type = "nvim-cmp";
         };
         vim.filetree.nvimTreeLua.enable = true;
+        vim.filetree.nvimTreeLua.openOnSetup = false;
         vim.tabline.nvimBufferline.enable = true;
         vim.treesitter = {
           enable = true;
