@@ -128,6 +128,12 @@ in {
       default = true;
       description = "New splits will open to the right";
     };
+
+    centerVertically = mkOption {
+      type = types.bool;
+      default = true;
+      description = "Cursor will always be vertically centered";
+    };
   };
 
   config = {
@@ -219,6 +225,13 @@ in {
       ${optionalString cfg.colourTerm ''
         set termguicolors
         set t_Co=256
+      ''}
+      ${optionalString cfg.centerVertically ''
+        augroup VCenterCursor
+          au!
+          au BufEnter,WinEnter,WinNew,VimResized *,*.*
+                \ let &scrolloff=winheight(win_getid())/2
+        augroup END
       ''}
     '';
   };
