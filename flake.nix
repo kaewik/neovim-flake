@@ -354,9 +354,6 @@
           gitsigns.enable = true;
         };
         vim.plantuml.enable = true;
-        vim.tnoremap = {
-          "<C-\\>" = "<C-\\><C-n>";
-        };
       };
     };
 
