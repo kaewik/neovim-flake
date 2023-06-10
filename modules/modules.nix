@@ -13,15 +13,14 @@
     ./filetree
     ./visuals
     ./lsp
+    ./languages
     ./treesitter
-    ./tidal
     ./autopairs
     ./snippets
     ./keys
-    ./markdown
     ./telescope
     ./git
-    ./plantuml
+    ./build
   ];
 
   pkgsModule = {config, ...}: {
