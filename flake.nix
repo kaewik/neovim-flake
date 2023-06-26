@@ -344,27 +344,27 @@
 
           nix.enable = overrideable true;
           markdown.enable = overrideable true;
-          html.enable = overrideable isMaximal;
-          clang.enable = overrideable isMaximal;
+          html.enable = overrideable true;
+          clang.enable = overrideable true;
           sql.enable = overrideable isMaximal;
           rust = {
-            enable = overrideable isMaximal;
+            enable = overrideable true;
             crates.enable = overrideable true;
           };
-          ts.enable = overrideable isMaximal;
+          ts.enable = overrideable true;
           go.enable = overrideable isMaximal;
           zig.enable = overrideable isMaximal;
-          python.enable = overrideable isMaximal;
-          plantuml.enable = overrideable isMaximal;
+          python.enable = overrideable true;
+          plantuml.enable = overrideable true;
 
           # See tidal config
           tidal.enable = overrideable false;
         };
         vim.lsp = {
           formatOnSave = overrideable true;
-          lspkind.enable = overrideable false;
-          lightbulb.enable = overrideable true;
-          lspsaga.enable = overrideable false;
+          lspkind.enable = overrideable true;
+          lightbulb.enable = overrideable false;
+          lspsaga.enable = overrideable true;
           nvimCodeActionMenu.enable = overrideable true;
           trouble.enable = overrideable true;
           lspSignature.enable = overrideable true;
