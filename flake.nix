@@ -361,13 +361,13 @@
           tidal.enable = overrideable false;
         };
         vim.lsp = {
-          formatOnSave = overrideable true;
-          lspkind.enable = overrideable true;
+          formatOnSave = overrideable false;
+          lspkind.enable = overrideable false;
           lightbulb.enable = overrideable false;
-          lspsaga.enable = overrideable true;
-          nvimCodeActionMenu.enable = overrideable true;
-          trouble.enable = overrideable true;
-          lspSignature.enable = overrideable true;
+          lspsaga.enable = overrideable false;
+          nvimCodeActionMenu.enable = overrideable false;
+          trouble.enable = overrideable false;
+          lspSignature.enable = overrideable false;
         };
         vim.visuals = {
           enable = overrideable true;
