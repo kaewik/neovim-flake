@@ -10,16 +10,17 @@ in {
   imports = [
     ./clang.nix
     ./go.nix
+    ./html.nix
+    ./kotlin.nix
+    ./markdown.nix
     ./nix.nix
+    ./plantuml.nix
     ./python.nix
     ./rust.nix
     ./sql.nix
+    ./tidal.nix
     ./ts.nix
     ./zig.nix
-    ./markdown.nix
-    ./plantuml.nix
-    ./tidal.nix
-    ./html.nix
   ];
 
   options.vim.languages = {

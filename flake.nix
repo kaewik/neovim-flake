@@ -337,7 +337,7 @@
         build.viAlias = overrideable false;
         build.vimAlias = overrideable true;
         vim.languages = {
-          enableLSP = overrideable true;
+          enableLSP = overrideable false;
           enableFormat = overrideable true;
           enableTreesitter = overrideable true;
           enableExtraDiagnostics = overrideable true;
@@ -356,6 +356,7 @@
           zig.enable = overrideable isMaximal;
           python.enable = overrideable true;
           plantuml.enable = overrideable true;
+          kotlin.enable = overrideable true;
 
           # See tidal config
           tidal.enable = overrideable false;
