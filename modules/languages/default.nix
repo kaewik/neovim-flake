@@ -11,6 +11,7 @@ in {
     ./clang.nix
     ./go.nix
     ./html.nix
+    ./java.nix
     ./kotlin.nix
     ./markdown.nix
     ./nix.nix

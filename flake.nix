@@ -357,6 +357,7 @@
           python.enable = overrideable true;
           plantuml.enable = overrideable true;
           kotlin.enable = overrideable true;
+          java.enable = overrideable true;
 
           # See tidal config
           tidal.enable = overrideable false;
