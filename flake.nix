@@ -340,7 +340,7 @@
           enableLSP = overrideable false;
           enableFormat = overrideable true;
           enableTreesitter = overrideable true;
-          enableExtraDiagnostics = overrideable true;
+          enableExtraDiagnostics = overrideable false;
 
           nix.enable = overrideable true;
           markdown.enable = overrideable true;
