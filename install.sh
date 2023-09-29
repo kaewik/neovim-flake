@@ -1,4 +1,6 @@
 #!/bin/bash -ex
-package_indices=$(nix profile list | grep neovim-flake | cut -d ' ' -f 1)
-nix profile remove $package_indices
+neovim_store_paths=$(nix profile list --json | jq -r '.elements[] | select(.originalUrl | contains("neovim")) | .storePaths[]')
+while IFS= read -r store_paths; do
+    nix profile remove $store_paths
+done <<< "$neovim_store_paths"
 nix profile install .#
