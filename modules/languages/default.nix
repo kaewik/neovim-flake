@@ -19,6 +19,7 @@ in {
     ./python.nix
     ./rust.nix
     ./sql.nix
+    ./terraform.nix
     ./tidal.nix
     ./ts.nix
     ./zig.nix
