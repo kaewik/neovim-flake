@@ -26,6 +26,7 @@ in
     ./terraform.nix
     ./tidal.nix
     ./ts.nix
+    ./typst.nix
     ./zig.nix
   ];
 
