@@ -24,6 +24,12 @@ in {
     (mkIf cfg.treesitter.enable {
       vim.treesitter.enable = true;
       vim.treesitter.grammars = [cfg.treesitter.package];
+      vim.luaConfigRC.typst = nvim.dag.entryAnywhere /* lua */ ''
+        vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
+          pattern = {"*.typ"},
+          command = "set filetype=typst"
+        })
+      '';
     })
   ]);
 }
